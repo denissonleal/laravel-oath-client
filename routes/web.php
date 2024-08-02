@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/redirect', function () {
+Route::get('/login', function () {
     return Socialite::driver('laravelpassport')->redirect();
 });
 
